@@ -3,8 +3,8 @@
 456 -> 5
 782 -> 8
 918 -> 1*/
-/*
-Console.WriteLine("Введите трехзначное число");
+
+/*Console.WriteLine("Введите трехзначное число");
 int num = Convert.ToInt32(Console.ReadLine());
 int num2=num;
 int count=0;
@@ -16,14 +16,14 @@ while (num2 >= 100)
 }
 
 res = num2 % 10;
-Console.WriteLine($"{num} -> {res % 10}");*/
+Console.WriteLine($"{num} -> {res % 10}");
         
-         /*{
+        {
             res = num2%10;
         num2=num2/10;
     Console.WriteLine("Вторая цифра, " + res);
-         }*/
-
+         }
+*/
 
 
 
@@ -33,7 +33,8 @@ Console.WriteLine($"{num} -> {res % 10}");*/
 
 78 -> третьей цифры нет
 
-32679 -> 6
+32679 -> 6*/
+
 /*Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
 int num2=num;
@@ -60,7 +61,7 @@ for(int k = 0; k < 3; k++)
 res = num2 / b;
 }
 Console.WriteLine($"{num2} ->{res % 10}");
-}  */     
+}    */ 
 
 /*Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
@@ -68,7 +69,7 @@ Console.WriteLine($"{num2} ->{res % 10}");
 7 -> да
 1 -> нет*/
 
-/*Console.WriteLine("Введите цифру дня недели");
+Console.WriteLine("Введите цифру дня недели");
 int dayNumber = Convert.ToInt32(Console.ReadLine());
 void CheckingDayOfWeek (int dayNumder)
 {
@@ -81,4 +82,4 @@ Console.WriteLine("эта цифра не является днем недели
 else 
 Console.WriteLine($"{dayNumber} -> нет (не выходной)");
 }
-CheckingDayOfWeek(dayNumber);*/
+CheckingDayOfWeek(dayNumber);
