@@ -55,7 +55,7 @@ Distance(x1, y1, z1, x2, y2, z2);*/
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
 
-Console.WriteLine("Введите натуральное: ");
+/*Console.WriteLine("Введите натуральное: ");
 int x = Convert.ToInt32(Console.ReadLine());
 int x1 = x;
 string res = $"{x} -> ";
@@ -63,4 +63,26 @@ for (int i = 1; i <= x; i++){
     int tmp = i * i * i;
     res += $"{tmp}, ";
 }
-Console.WriteLine(res);
+Console.WriteLine(res);*/
+
+
+//Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в N-мерном пространстве. Сначала задается N с клавиатуры, потом задаются координаты точек.
+
+void Distance(int x, int y, int z)
+{
+  double n = Math.Round (Math.Sqrt((x - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2)), 2);
+
+ 
+  Console.WriteLine($"Расстояние составляет {n}");
+}
+
+Console.WriteLine("Введите координату х1, у1 и z1");
+int x1 = Convert.ToInt32(Console.ReadLine());
+int y1 = Convert.ToInt32(Console.ReadLine());
+int z1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату х2, у2 и z2");
+int x2 = Convert.ToInt32(Console.ReadLine());
+int y2 = Convert.ToInt32(Console.ReadLine());
+int z2 = Convert.ToInt32(Console.ReadLine());
+
+Distance(x1, y1, z1, x2, y2, z2);
